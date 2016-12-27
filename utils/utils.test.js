@@ -14,6 +14,21 @@ it('should add two numbers', () =>{
 
 });
 
+//by adding in 'done' it waits for the 'done' function to be called before saying whether the test passed or failed
+it('should async add two numbers', (done) =>{
+  utils.asyncAdd(4,3,(sum)=>{
+      expect(sum).toBe(7).toBeA('number');
+      done();
+  });
+});
+
+it('should async square a number', (done)=>{
+  utils.asyncSquare(4,(res)=>{
+    expect(res).toBe(16).toBeA('number');
+    done();
+  });
+});
+
 it('should square a number', () =>{
   var res = utils.square(3);
 
