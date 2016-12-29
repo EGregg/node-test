@@ -1,6 +1,16 @@
 # node-test
 
-Test Driven Development assignment utilizing mocha.js
+###Assignment:
+develop a Test Driven Development evironment utilizing mocha.js
 
-initialize by running $npm test from parent directory
+###How to use:
+copy or clone repository to directory
+
+install dependancies by using <code>$npm install</code> 
+
+write the function to test in /utils/utils.js
+
+write the test in /utils/utils.test.js
+
+initialize by running <code>$npm test</code> from parent directory
 
